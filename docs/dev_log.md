@@ -10,3 +10,7 @@
 
 - feat: implement responsive landing page layout
 
+# Developer Progress Log - 2026-03-15
+
+- style: design minimal dark theme palette and splash loader animation
+
