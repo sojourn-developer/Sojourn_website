@@ -14,3 +14,7 @@
 
 - style: design minimal dark theme palette and splash loader animation
 
+# Developer Progress Log - 2026-03-24
+
+- feat: integrate CanvasKit WASM renderer for high-performance graphics
+
