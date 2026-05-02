@@ -30,3 +30,7 @@
 
 - feat: implement travel experience explore dashboard
 
+# Developer Progress Log - 2026-05-02
+
+- feat: add details pages for travel services and hotels
+
