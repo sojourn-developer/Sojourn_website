@@ -34,3 +34,7 @@
 
 - feat: add details pages for travel services and hotels
 
+# Developer Progress Log - 2026-05-12
+
+- feat: implement shopping cart state and add-to-trip flow
+
