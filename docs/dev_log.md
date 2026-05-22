@@ -38,3 +38,7 @@
 
 - feat: implement shopping cart state and add-to-trip flow
 
+# Developer Progress Log - 2026-05-22
+
+- feat: integrate Razorpay script loading and checkout triggers
+
