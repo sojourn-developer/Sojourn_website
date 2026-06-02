@@ -42,3 +42,7 @@
 
 - feat: integrate Razorpay script loading and checkout triggers
 
+# Developer Progress Log - 2026-06-02
+
+- style: refine interactive room selection cards and transitions
+
