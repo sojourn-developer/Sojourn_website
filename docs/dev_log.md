@@ -46,3 +46,7 @@
 
 - style: refine interactive room selection cards and transitions
 
+# Developer Progress Log - 2026-06-12
+
+- perf: optimize CanvasKit chromium variant fallback mechanism
+
