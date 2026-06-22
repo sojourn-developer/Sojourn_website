@@ -50,3 +50,7 @@
 
 - perf: optimize CanvasKit chromium variant fallback mechanism
 
+# Developer Progress Log - 2026-06-22
+
+- fix: resolve service worker caching invalidation logic
+
