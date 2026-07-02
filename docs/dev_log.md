@@ -54,3 +54,7 @@
 
 - fix: resolve service worker caching invalidation logic
 
+# Developer Progress Log - 2026-07-02
+
+- chore: configure deployment scripts and redirects
+
