@@ -58,3 +58,7 @@
 
 - chore: configure deployment scripts and redirects
 
+# Developer Progress Log - 2026-07-05
+
+- docs: update README with project architecture and setup guides
+
