@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/">
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sojourn — Kashmir's Luxury Travel Concierge. Experience the valley in one curated journey.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Sojourn">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/minimal.png"/>
+
+  <title>Sojourn — Kashmir's Luxury Concierge</title>
+  <link rel="manifest" href="manifest.json">
+
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      background-color: #0A0A0C;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    flutter-view {
+      width: 100vw;
+      height: 100vh;
+    }
+    #loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+      flex-direction: column;
+    }
+    .loader {
+      width: 40px;
+      height: 40px;
+      border: 2px solid rgba(247, 245, 240, 0.1);
+      border-top: 2px solid #8B2620;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div id="loading">
+    <div class="loader"></div>
+  </div>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function(registrations) {
+        registrations.forEach(function(registration) { registration.unregister(); });
+      });
+    }
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+  <script>
+    window.addEventListener('load', function(ev) {
+      // Small timeout to ensure engine is truly ready to paint
+      setTimeout(function() {
+        var loading = document.querySelector('#loading');
+        if (loading) {
+          loading.style.opacity = '0';
+          setTimeout(function() { 
+            loading.remove(); 
+          }, 300);
+        }
+      }, 500);
+    });
+  </script>
+</body>
+</html>
